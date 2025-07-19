@@ -1,0 +1,60 @@
+【レベル1：基礎】
+問題1
+Animalクラスを作り、speak()メソッドで「Animal speaks」と出力する。
+Dogクラスを作り、Animalを継承してspeak()をオーバーライドし、「Woof!」と出力する。
+main()でAnimalとDogを生成してspeak()を呼び出せ。
+
+問題2
+Employeeクラスにwork()メソッドを作り、「Employee is working」と出力する。
+Managerクラスを作り、Employeeを継承してwork()をオーバーライドし、
+super.work()を呼んだ後、「Manager is managing」と出力する。
+main()でManagerインスタンスを作り、work()を実行せよ。
+
+問題3
+Personクラスに名前を保持するnameフィールドとコンストラクタを作成する。
+Studentクラスを作り、Personを継承して学籍番号studentIdを追加し、
+introduce()メソッドで「My name is [名前], student ID is [学籍番号]」と出力せよ。
+main()でStudentを生成し、introduce()を実行せよ。
+
+【レベル2：応用】
+問題4
+Shapeを抽象クラスにし、抽象メソッドdouble area()を定義する。
+RectangleとCircleクラスを作り、それぞれ面積を返すarea()を実装する。
+main()でShape型の配列を作り、Rectangle(5,10)とCircle(3)を入れて面積を出力せよ。
+
+問題5
+Vehicleクラスにmove()メソッドを定義し、「Vehicle is moving」と出力する。
+Carクラスを作り、move()をオーバーライドして「Car is driving」と出力する。
+Bikeクラスも作り、「Bike is running」と出力する。
+main()でVehicle[]配列にCarとBikeを入れて、拡張forでmove()を実行せよ。
+
+問題6
+Parentクラスにshow()メソッドを定義し、「Parent class」と出力する。
+Childクラスを作り、show()をオーバーライドして「Child class」と出力する。
+さらにmain()で次を試し、出力を確認せよ：
+
+java
+コピーする
+編集する
+Parent p = new Child();
+p.show();
+【レベル3：実践】
+問題7
+Animalクラスを基底に、DogとCatクラスを作成し、sound()をオーバーライドする。
+main()でAnimal型の配列にDogとCatを入れ、sound()を実行する。
+さらにinstanceofを使って、DogかCatかを判別してメッセージを出力せよ。
+
+問題8
+Personをスーパークラスとし、TeacherとStudentを継承する。
+それぞれにintroduce()メソッドを持ち、役割と名前を表示する。
+main()でPerson型のリストにTeacherとStudentを入れ、for-eachでintroduce()を呼び出せ。
+
+問題9
+抽象クラスAccountを作り、deposit()とwithdraw()を抽象メソッドにする。
+SavingsAccountクラスを作り、残高を保持し、入金・出金を実装する。
+main()でdeposit(1000)→withdraw(500)を実行し、残高を表示せよ。
+
+問題10
+Shapeクラスをスーパークラスとし、Rectangle・Circle・Triangleを作る。
+main()でユーザー入力に応じてオブジェクトを生成し、面積を計算して出力するプログラムを作れ。
+（入力例：circle 3 → 出力：Area: 28.26）
